@@ -13,7 +13,7 @@ const Details = () => {
     }}>
         <Stack sx={{
             width:"98%",
-            height:'95%',
+            height:'95%'
         }}>
           <BasicTabs/>
         </Stack>

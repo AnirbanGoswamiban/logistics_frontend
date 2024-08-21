@@ -7,9 +7,9 @@ function App() {
   return (
     <>
     <ButtonAppBar/>
-    <Account/>
+    {/* <Account/> */}
     {/* <Tasks/> */}
-    {/* <Details/> */}
+    <Details/>
     </>
   )
 }
