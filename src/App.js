@@ -1,15 +1,12 @@
 import react from 'react'
 import ButtonAppBar from './Components/Navbar'
-import Account from './Pages/Account'
-import Tasks from './Pages/Tasks'
 import Details from './Pages/Details'
+import { Outlet } from 'react-router-dom';
 function App() {
   return (
     <>
     <ButtonAppBar/>
-    {/* <Account/> */}
-    {/* <Tasks/> */}
-    <Details/>
+    <Outlet/>
     </>
   )
 }

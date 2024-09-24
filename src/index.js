@@ -2,12 +2,35 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Account from './Pages/Account'
+import Tasks from './Pages/Tasks'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    children:[
+      {
+      path:"/Accounts",
+      element:<Account/>
+      },
+      {
+        path:'/Tasks',
+        element:<Tasks/>
+      }
+    ]
+  },
+]);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
