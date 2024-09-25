@@ -56,6 +56,21 @@ export default function ButtonAppBar() {
                 Tasks
               </Button>
             </Link>
+            <Link to={"/Vendors"}>
+              <Button
+                sx={{
+                  fontSize: "1rem",
+                  fontWeight: "bold",
+                  color: "#fff",
+                  "&:hover": {
+                    background: "#4ED8D1",
+                    color: "#d84e55",
+                  },
+                }}
+              >
+                Vendors
+              </Button>
+            </Link>
             <Link to={"/Accounts"}>
               <IconButton
                 sx={{

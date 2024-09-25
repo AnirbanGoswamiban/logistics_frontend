@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Account from './Pages/Account'
 import Tasks from './Pages/Tasks'
+import Vendors from './Pages/Vendors';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path:'/Tasks',
         element:<Tasks/>
+      },
+      {
+        path:'/Vendors',
+        element:<Vendors/>
       }
     ]
   },
